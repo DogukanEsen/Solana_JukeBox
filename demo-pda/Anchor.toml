@@ -1,0 +1,18 @@
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+demo_pda = "bYj1YXjVRxqte3evzi8eLJ6PrdHYGDfoJsBCk22bi1u"
+
+[programs.devnet]
+demo_pda = "bYj1YXjVRxqte3evzi8eLJ6PrdHYGDfoJsBCk22bi1u"
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/dogukane/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
